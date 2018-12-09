@@ -60,7 +60,7 @@ img#img_container_heading {
 
 .grid {
     /* Masonry container */
-    column-count: 3;
+    column-count:2;
     column-gap: em;
 }
 
