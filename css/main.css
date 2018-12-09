@@ -5,20 +5,40 @@ html {
     width: 100%;
     background-color: black;
 
+    font: size 72pt;
 }
+
+@font-face {
+    font-family: 'GreekHouse';
+    src: url("/static/fonts/GreekHouse.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'ChineseTakeaway';
+    src: url("/static/fonts/CHINESETAKEAWAY.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Capitalis';
+    src: url("/static/fonts/CapitalisTypOasis.ttf") format('truetype');
+}
+
+/* background */
+img {
+    width: 100%;
+    height: auto;
+    z-index: 3;
+
+}
+
+img#img_container_heading {
+    width: 50%;
+}
+
 
 .bg {
     height: 100%;
     width: 100%;
     background-size: cover;
-}
-
-div#img_box {
-    display: grid;
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    right: 0;
 }
 
 img#img_container_heading {
@@ -32,6 +52,16 @@ img#img_container_heading {
 
 }
 
+div#img_box {
+    display: grid;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* CONTENT */
 .content {
     position: absolute;
     z-index: 2;
@@ -41,27 +71,34 @@ img#img_container_heading {
 
     margin-left: auto;
     margin-right: auto;
-    max-width: 70%;
+    max-width: 80%;
     margin-top: 100px;
     z-index: 3
 }
 
-img {
-    width: 100%;
-    /* you can use % */
-    height: auto;
-    z-index: 3;
+.gr {
+    font-family: 'Capitalis', Fallback, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72pt;
+    text-align: center;
+    color: #5CB9C0;
+    opacity: 0.7;
 
 }
 
-img#img_container_heading {
-    width: 50%;
+.ch {
+    font-family: 'ChineseTakeaway', Fallback, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72pt;
+    text-align: center;
+    color: #ffdab9;
+
 }
 
+
+/*Masonry */
 .grid {
     /* Masonry container */
-    column-count:2;
-    column-gap: em;
+    column-count: 3;
+    column-gap: 1em;
 }
 
 .grid-item {
@@ -73,29 +110,23 @@ img#img_container_heading {
 
 
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-/* The Masonry Brick */
-.grid-item {
- 
-    margin: 0 0 1.5em;
-}
 
 
 /* Masonry on medium-sized screens */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .grid {
         column-count: 2;
+        max-width: 100%;
     }
 }
 
 /* Masonry on small screens */
 @media only screen and (max-width: 767px) and (min-width: 540px) {
     .grid {
-        column-count: 2;
+        column-count: 1;
+    }
+
+    .img_wall {
+        max-width: 95%;
     }
 }
