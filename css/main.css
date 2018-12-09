@@ -4,22 +4,20 @@ html {
     height: 100%;
     width: 100%;
     background-color: black;
-
-    font: size 72pt;
 }
 
 @font-face {
     font-family: 'GreekHouse';
-    src: url("/static/fonts/GreekHouse.ttf") format('truetype');
+    src: url("./fonts/GreekHouse.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'ChineseTakeaway';
-    src: url("/static/fonts/CHINESETAKEAWAY.ttf") format('truetype');
+    src: url("./fonts/CHINESETAKEAWAY.ttf") format('truetype');
 }
 @font-face {
     font-family: 'Capitalis';
-    src: url("/static/fonts/CapitalisTypOasis.ttf") format('truetype');
+    src: url("./fonts/CapitalisTypOasis.ttf") format('truetype');
 }
 
 /* background */
