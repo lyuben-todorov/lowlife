@@ -89,7 +89,7 @@ img#img_container_heading {
 /* Masonry on medium-sized screens */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .grid {
-        column-count: 3;
+        column-count: 2;
     }
 }
 
