@@ -4,6 +4,8 @@ html {
     height: 100%;
     width: 100%;
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
 }
 
 @font-face {
@@ -19,6 +21,10 @@ html {
     font-family: 'Capitalis';
     src: url("./fonts/CapitalisTypOasis.ttf") format('truetype');
 }
+@font-face {
+    font-family: 'OldLondon';
+    src: url("./fonts/OldLondon.otf") ;
+}
 
 /* background */
 img {
@@ -28,11 +34,6 @@ img {
 
 }
 
-img#img_container_heading {
-    width: 50%;
-}
-
-
 .bg {
     height: 100%;
     width: 100%;
@@ -40,6 +41,7 @@ img#img_container_heading {
 }
 
 img#img_container_heading {
+    width: 50%;
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
@@ -57,7 +59,47 @@ div#img_box {
     left: 0;
     right: 0;
 }
+input#about{
+    width:30px; 
+    height:auto;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input:focus{
+    outline: 0;
+}
 
+
+
+/* MODAL */
+.modal#aboutModal{
+    background-color: transparent;
+
+}
+.modal-content#aboutModal{
+    background-color: 	#101010;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+
+}
+.modal-dialog#aboutModal{
+    max-width: 900px;
+}
+.place{
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#aboutContainer{
+    font-family: 'Times New Roman', Times, serif;
+    color: 		#B0B0B0;
+}
+h2{
+    text-align: center;
+}
 
 /* CONTENT */
 .content {
@@ -91,6 +133,22 @@ div#img_box {
 
 }
 
+.cl {
+    font-family: 'OldLondon', Fallback, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72pt;
+    text-align: center;
+    color: white;
+
+}
+
+.sh {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 36pt;
+    text-align: center;
+    color: crimson;
+
+}
+
 
 /*Masonry */
 .grid {
@@ -105,10 +163,6 @@ div#img_box {
     width: 100%;
     margin: 0 0 1.5em;
 }
-
-
-
-
 
 /* Masonry on medium-sized screens */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
