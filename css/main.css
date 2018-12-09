@@ -1,24 +1,27 @@
-body, html {
+body,
+html {
     margin: 0;
     height: 100%;
     width: 100%;
-    background: black;
+    background-color: black;
 
 }
-.bg{
+
+.bg {
     height: 100%;
     width: 100%;
     background-size: cover;
 }
 
-div#img_box{
+div#img_box {
     display: grid;
     position: fixed;
     z-index: 0;
     left: 0;
     right: 0;
 }
-img#img_container_heading{
+
+img#img_container_heading {
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
@@ -28,21 +31,71 @@ img#img_container_heading{
 
 
 }
-.content{
+
+.content {
     position: absolute;
-    z-index:100;
+    z-index: 2;
 }
 
-.img_wall{
-    display: block;
+.img_wall {
+
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 70%;
     margin-top: 100px;
-
+    z-index: 3
 }
-img#img1{
-    width:100%; /* you can use % */
+
+img {
+    width: 100%;
+    /* you can use % */
     height: auto;
+    z-index: 3;
+
 }
 
+img#img_container_heading {
+    width: 50%;
+}
+
+.grid {
+    /* Masonry container */
+    column-count: 3;
+    column-gap: em;
+}
+
+.grid-item {
+    /* Masonry bricks or child elements */
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 1.5em;
+}
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* The Masonry Brick */
+.grid-item {
+ 
+    margin: 0 0 1.5em;
+}
+
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .grid {
+        column-count: 3;
+    }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+    .grid {
+        column-count: 2;
+    }
+}
