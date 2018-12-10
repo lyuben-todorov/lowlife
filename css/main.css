@@ -7,6 +7,9 @@ html {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16pt;
 }
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 @font-face {
     font-family: 'GreekHouse';
@@ -103,18 +106,11 @@ h2{
 
 /* CONTENT */
 .content {
-    position: absolute;
+    position: relative;
     z-index: 2;
 }
 
-.img_wall {
 
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    margin-top: 100px;
-    z-index: 3
-}
 
 .gr {
     font-family: 'Capitalis', Fallback, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -149,36 +145,7 @@ h2{
 
 }
 
-
-/*Masonry */
-.grid {
-    /* Masonry container */
-    column-count: 3;
-    column-gap: 1em;
-}
-
 .grid-item {
     /* Masonry bricks or child elements */
-    display: inline-block;
-    width: 100%;
     margin: 0 0 1.5em;
-}
-
-/* Masonry on medium-sized screens */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-    .grid {
-        column-count: 2;
-        max-width: 100%;
-    }
-}
-
-/* Masonry on small screens */
-@media only screen and (max-width: 767px) and (min-width: 540px) {
-    .grid {
-        column-count: 1;
-    }
-
-    .img_wall {
-        max-width: 95%;
-    }
 }
