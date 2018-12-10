@@ -6,6 +6,8 @@ html {
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16pt;
+     user-select: none; 
+
 }
 ::-webkit-scrollbar { 
     display: none; 
