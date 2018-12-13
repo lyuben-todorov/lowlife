@@ -7,7 +7,6 @@ html {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16pt;
     user-select: none;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -174,7 +173,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 36pt;
     text-align: center;
-    color: rgb(187, 0, 37);
+    color: rgba(243, 0, 49, 0.671);
 
 
 }
@@ -183,7 +182,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 42pt;
     text-align: center;
-    color: white;
+    color: #cdcdcd;
 
 }
 
@@ -191,7 +190,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 42pt;
     text-align: center;
-    color: white;
+    color: #cdcdcd;
 }
 
 .ftr {
@@ -202,7 +201,7 @@ h2 {
 }
 
 .ftr a {
-    color: #86868693;
+    color: #86868693 !important;
 
 }
 
