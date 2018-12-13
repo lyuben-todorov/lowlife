@@ -180,6 +180,13 @@ h2 {
 
 }
 
+.sp {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42pt;
+    text-align: center;
+    color: white;
+}
+
 .grid-item {
     /* Masonry bricks or child elements */
     margin: 0 0 1.5em;
