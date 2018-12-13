@@ -186,6 +186,25 @@ h2 {
     text-align: center;
     color: white;
 }
+.ftr{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8pt;
+    text-align: center;
+    color: #86868693;
+}
+.ftr a{
+    color: #86868693;
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #86868693;
+
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
 .grid-item {
     /* Masonry bricks or child elements */
