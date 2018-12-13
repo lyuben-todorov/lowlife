@@ -1,3 +1,3 @@
 # lowlife
 
-A single-page plain html/css artist portfolio website using bootstrap and bootstrap-based libraries. 
+A desktop-focused, single-page, plain html/css artist portfolio website using bootstrap and bootstrap-based libraries. 
