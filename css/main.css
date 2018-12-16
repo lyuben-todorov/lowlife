@@ -227,6 +227,16 @@ hr {
 
 }
 
+/* NAVBAR */
+.nav .nav-item a{
+    color: #86868693 !important;
+}
+
+.nav{
+    background-color: #1a1a1ae0;
+    position: absolute;
+}
+
 
 
 
