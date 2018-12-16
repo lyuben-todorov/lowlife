@@ -57,6 +57,12 @@ html {
 }
 
 /* background */
+.bg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
 img{
     border-radius: .25rem!important;
     border-color: #5CB9C0;
@@ -64,11 +70,6 @@ img{
 
 }
 
-.bg {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-}
 
 img#img_container_heading {
     width: 50%;
@@ -80,6 +81,9 @@ img#img_container_heading {
     filter: blur(2px);
 
 
+}
+img#biopic{
+    max-width: 100%;
 }
 
 div#img_box {
@@ -129,7 +133,8 @@ input:focus {
 }
 
 .modal-dialog#aboutModal {
-    max-width: 900px;
+    max-width: 50%;
+    margin:auto;
 }
 
 .about-backdrop {
@@ -239,11 +244,6 @@ hr {
     max-width: 80%;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.grid-item {
-    /* Masonry bricks or child elements */
-    margin: 0 0 1.5em;
 }
 
 .col-gal {
@@ -377,6 +377,9 @@ a.active {
         padding-top:120px;
     }
 
+    #aboutModal{
+        max-width: 100% !important;
+    }
     .nav .nav-item a {
         font-size: 36pt;
     }
