@@ -369,3 +369,15 @@ a.active {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
+
+@media only screen and (orientation: portrait) {
+    .content{
+        max-width: 100%;
+        padding-top:120px;
+    }
+
+    .nav .nav-item a {
+        font-size: 36pt;
+    }
+}
