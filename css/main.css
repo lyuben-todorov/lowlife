@@ -3,17 +3,38 @@ html {
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     font-family: 'Times New Roman', Times, serif;
     font-size: 16pt;
     user-select: none;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
+
+
+body {
+    opacity: 1;
+}
+ 
+body.loading {
+    opacity: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
 
 ::-webkit-scrollbar {
     display: none;
 }
+*[id]:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -75px; 
+    height: 75px; 
+    visibility: hidden; 
+  }
 
 @font-face {
     font-family: 'GreekHouse';
@@ -36,10 +57,10 @@ html {
 }
 
 /* background */
-img {
-    width: 100%;
-    height: auto;
-    z-index: 3;
+img{
+    border-radius: .25rem!important;
+    border-color: #5CB9C0;
+    border-width: 5px;
 
 }
 
@@ -52,11 +73,11 @@ img {
 img#img_container_heading {
     width: 50%;
     max-width: 100%;
-    max-height: 100vh;
+    height: auto;
     margin: auto;
     opacity: 0.3;
     z-index: 0;
-    filter: blur(5px);
+    filter: blur(2px);
 
 
 }
@@ -110,8 +131,10 @@ input:focus {
 .modal-dialog#aboutModal {
     max-width: 900px;
 }
+
 .about-backdrop {
-    background-color: #1a1a1ae0 ; 
+
+    background-color: #1a1a1ae0;
     opacity: 1 !important;
     width: 100%;
     height: 100%;
@@ -143,6 +166,9 @@ h2 {
     margin-right: auto;
 }
 
+body {
+    padding-top: 60px;
+}
 
 .gr {
     font-family: 'Capitalis', Fallback, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -173,14 +199,14 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 36pt;
     text-align: center;
-    color: rgba(243, 0, 49, 0.671);
+    color: #cdcdcd;
 
 
 }
 
 .ph {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 42pt;
+    font-size: 36pt;
     text-align: center;
     color: #cdcdcd;
 
@@ -188,7 +214,7 @@ h2 {
 
 .sp {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 42pt;
+    font-size: 36pt;
     text-align: center;
     color: #cdcdcd;
 }
@@ -228,18 +254,32 @@ hr {
 }
 
 /* NAVBAR */
-.nav .nav-item a{
-    color: #86868693 !important;
+.nav .nav-item a {
+    color: #bbbbbbc5;
+    height: 100%;
+    margin:0;
+    padding-bottom: 0px;
+    text-align: end;
+    position: relative;
 }
 
-.nav{
+.navbar {
+    padding: 0 !important; 
+    position: fixed;
+    align-content: flex-end;
+}
+
+.nav-links{
+
     background-color: #1a1a1ae0;
-    position: absolute;
 }
+a.active {
+    color: #c9c9c9f1 !important;
+    font-size: 22pt; 
+    font-weight: bolder;
+    padding-top: 0px;
 
-
-
-
+}
 
 /*HOVER EFFECT*/
 
